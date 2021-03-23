@@ -1,9 +1,0 @@
-language: python
-version:
-  - "3.9.1"
-
-before_script:
-  - pip install venv
-
-scripts:
-  - python manage.py
