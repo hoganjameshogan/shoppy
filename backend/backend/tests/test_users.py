@@ -20,3 +20,7 @@ class UserTests(TestCase):
         )
         self.assertEqual(user.username, email)
         self.assertTrue(user.check_password(password))
+
+    def test_user_login(self):
+        """Test user login success with valid credentials"""
+        
