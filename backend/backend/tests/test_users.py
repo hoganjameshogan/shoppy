@@ -3,7 +3,7 @@ from django.test import TestCase
 
 class UserTests(TestCase):
 
-    def create_sample_user(email:'sampleuser@sample.com', password='a123456'):
+    def create_sample_user(email='sampleuser@sample.com', password='a123456'):
         """Initiates sample user for tests"""
         return get_user_model().objects.create(email,password)
 
@@ -23,4 +23,4 @@ class UserTests(TestCase):
 
     def test_user_login(self):
         """Test user login success with valid credentials"""
-        
+
