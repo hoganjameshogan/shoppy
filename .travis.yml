@@ -2,5 +2,8 @@ language: python
 version:
   - "3.9.1"
 
+before_script:
+  - 'venv\Scripts\activate && cd backend'
+
 script: 
-  - "cd backend && python manage.py test"
+  - "python manage.py test"
