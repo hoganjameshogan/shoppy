@@ -8,7 +8,7 @@ class UserTests(TestCase):
         return get_user_model().objects.create(email,password)
 
     def test_user_register(self):
-        """Test that a user can be registered"""
+        """Test that a user can be registtered"""
         email = 'sampleuser@sample.com'
         password = 'a123456'
 
