@@ -1,18 +1,9 @@
 language: python
 version:
-  - "2.7"
-  - "3.4"
-  - "3.5"
-  - "3.6"      # current default Python on Travis CI
-  - "3.7"
-  - "3.8"
-  - "3.9"
-  - "3.9-dev"  # 3.9 development branch
-  - "nightly"  # nightly build
+  - "3.9.1"
 
+before_script:
+  - pip install venv
 
-
-script: 
-  - 'venv\Scripts\activate'
-  - 'cd backend'
-  - 'python manage.py test'
+scripts:
+  - python manage.py
