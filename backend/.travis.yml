@@ -1,6 +1,6 @@
-language : python
+language: python
 version:
   - "3.9.1"
 
-script : 
+script: 
   - python manage.py test
